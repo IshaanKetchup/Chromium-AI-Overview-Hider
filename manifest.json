@@ -1,0 +1,17 @@
+{
+  "manifest_version": 3,
+  "name": "Google AI Overview Remover",
+  "version": "1.2.0",
+  "description": "Removes Google AI Overview and AI Mode from search results.",
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://www.google.com/search*",
+        "https://www.google.co.in/search*"
+      ],
+      "js": ["content.js"],
+      "run_at": "document_start"
+    }
+  ]
+}
